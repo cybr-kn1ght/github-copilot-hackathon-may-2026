@@ -1,0 +1,17 @@
+{
+  "name": "github-analytics-api",
+  "version": "1.0.0",
+  "description": "Azure Functions API for GitHub Analytics",
+  "main": "dist/analyze/index.js",
+  "scripts": {
+    "build": "tsc"
+  },
+  "dependencies": {
+    "@azure/functions": "^4.0.0",
+    "@azure/openai": "^2.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^18.18.0",
+    "typescript": "~5.5.0"
+  }
+}

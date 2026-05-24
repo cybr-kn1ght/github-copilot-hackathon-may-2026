@@ -1,0 +1,26 @@
+name: github-analytics
+metadata:
+  description: GitHub Developer Analytics with AI Persona
+  template: infra/main.bicep
+  parameters: infra/main.parameters.json
+
+services:
+  web:
+    project: ./
+    language: js
+    host: staticwebapp
+    module: swa
+  api:
+    project: ./api
+    language: typescript
+    host: function
+    module: api
+
+env:
+  AZURE_OPENAI_ENDPOINT:
+    description: Azure OpenAI endpoint
+  AZURE_OPENAI_API_KEY:
+    description: Azure OpenAI API key
+  AZURE_OPENAI_DEPLOYMENT_ID:
+    description: Azure OpenAI deployment ID
+    value: gpt-4o-mini

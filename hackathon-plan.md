@@ -58,10 +58,9 @@ Requirements:
 
 Output:
 1. Architecture
-2. Agents list
-3. Data flow
-4. Azure services
-5. Risks
+2. Data flow
+3. Azure services
+4. Risks
 ```
 
 - [ ] Refine the solution architecture

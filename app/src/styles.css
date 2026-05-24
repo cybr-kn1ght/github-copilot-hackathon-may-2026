@@ -1,0 +1,61 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+* {
+  @apply box-border;
+}
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+
+  body {
+    @apply bg-gh-bg text-gh-text font-sans antialiased;
+  }
+
+  h1 {
+    @apply text-3xl font-bold;
+  }
+
+  h2 {
+    @apply text-2xl font-bold;
+  }
+
+  h3 {
+    @apply text-lg font-semibold;
+  }
+}
+
+@layer components {
+  .card {
+    @apply bg-gh-surface border border-gh-border rounded-lg p-4 shadow-sm;
+  }
+
+  .button {
+    @apply px-4 py-2 rounded-lg font-medium transition-colors duration-200;
+  }
+
+  .button-primary {
+    @apply button bg-gh-blue text-gh-bg hover:bg-blue-600;
+  }
+
+  .button-ghost {
+    @apply button bg-transparent border border-gh-border text-gh-text hover:bg-gh-surface;
+  }
+
+  .input {
+    @apply w-full px-3 py-2 bg-gh-surface border border-gh-border rounded-lg text-gh-text placeholder-gh-muted focus:outline-none focus:ring-2 focus:ring-gh-blue focus:ring-offset-2 focus:ring-offset-gh-bg;
+  }
+
+  .stat-badge {
+    @apply inline-flex items-center gap-2 px-3 py-1 bg-gh-surface border border-gh-border rounded-full text-sm text-gh-muted;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-gradient-to-r from-gh-blue via-gh-purple to-gh-orange bg-clip-text text-transparent;
+  }
+}
