@@ -1,5 +1,9 @@
 # GitHub Profile Analyser
 
+![Search page](assets/search.png)
+
+![Dashboard page](assets/dashboard.png)
+
 This project was created for the Microsoft GitHub Copilot hackathon, which was held in the Canberra Microsoft office in May 2026. 
 
 I had ~2 hours to create it, including deploying to the cloud.
