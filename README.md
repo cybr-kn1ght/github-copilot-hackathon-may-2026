@@ -1,8 +1,15 @@
-# GitHub Profile Analyser
+# Dev Metrics
+
+Search for developers: 
 
 ![Search page](assets/search.png)
 
+
+Analyse their activity: 
+
 ![Dashboard page](assets/dashboard.png)
+
+---
 
 This project was created for the Microsoft GitHub Copilot hackathon, which was held in the Canberra Microsoft office in May 2026. 
 
